@@ -1,0 +1,212 @@
+Yapay Sinir Ağları – Özet Ders Notları
+---------------------------------------------------------
+x1…xn → giriş verileri (piksel, sayı, özellik)
+
+w, b → ağırlık ve bias parametreleri (öğrenilen değerler)
+
+Hidden Layer → asıl öğrenmenin gerçekleştiği katman
+(Ağırlıklı toplam + Aktivasyon)
+
+Output → ağın tahmini (ŷ)
+
+
+-------------------------------------------------------
+Yapay Sinir Ağı Şeması (Sade – ASCII)
+                  ┌───────────────────────────┐
+                  │      INPUT (Girdi)        │                              
+                  │  x1   x2   x3   ...   xn  │
+                  └───────────┬───────────────┘
+                              │
+                              ▼
+                    ┌────────────────┐
+                    │  HIDDEN LAYER  │
+         w,b  ┌────►│   h1  h2  h3   │◄────┐  w,b
+              │     └────────────────┘     │
+              │              │              │
+              │              ▼              │
+              │     (Ağırlık + Bias +       │
+              │     Aktivasyon Hesabı)      │
+              │                              │
+              │                              │
+              └──────────────┬───────────────┘
+                              │
+                              ▼
+                      ┌───────────────┐
+                      │   OUTPUT       │
+                      │    y_hat       │
+                      └───────────────┘
+-----------------------------------------------------------------------------------
+Öğrenme Akışı Şeması (Feedforward + Backprop)
+
+Girdi → (Feedforward) → Çıktı → Hata → (Backpropagation) → Güncellenmiş w,b
+                   ↑                                                   │
+                   └────────────────────── (Epoch döngüsü) ────────────┘
+
+----------------------------------------------------------------------------------
+XOR Problem Şeması (Neden Gizli Katman Gerekir?)
+XOR Veri Noktaları:
+
+  (0,1) ●               ● (1,0)
+  
+  (0,0) ○               ○ (1,1)
+
+● = 1 çıktısı verilen noktalar
+○ = 0 çıktısı verilen noktalar
+
+Bu noktalar tek bir düz çizgi ile ayrılamaz.
+      ↓
+Tek katmanlı perceptron çözemez.
+      ↓
+Gizli Katman + Aktivasyon Gereklidir.
+
+
+
+-----------------------------------------------------
+1) 🌐 Yapay Sinir Ağı (YSA) Temel Yapısı
+
+Bir YSA üç ana katmandan oluşur:
+
+1. Girdi Katmanı (Input Layer)
+
+Ham verinin giriş yaptığı ilk katmandır.
+
+Hesaplama yapmaz, sadece veriyi taşır.
+
+Örnek: Görüntüdeki piksel değerleri.
+
+
+2. Gizli Katman(lar) (Hidden Layers)
+
+Asıl hesaplama ve öğrenme burada yapılır.
+
+Ağırlık (w) ve sapma (bias) değerleri kullanılarak girdiler işlenir.
+
+Aktivasyon fonksiyonları sayesinde ağ doğrusal olmayan ilişkileri öğrenir.
+
+Derin öğrenmede birden fazla gizli katman bulunur.
+
+
+
+3. Çıktı Katmanı (Output Layer)
+
+Nihai tahmin üretilir.
+
+
+
+Problem türüne göre çıkış yapısı değişir (sınıf etiketi, olasılık, sayısal değer).
+
+2) 🔧 Temel Matematik: Ağırlık, Bias, Aktivasyon
+Ağırlıklar (w)
+
+Bir girdinin nöron üzerindeki etkisini belirler.
+
+Öğrenme sırasında güncellenir.
+
+Bias (b)
+
+Aktivasyon fonksiyonunu kaydırır (esneklik sağlar).
+
+Doğrusal olmayan karar sınırlarının oluşmasına yardımcı olur.
+
+b, tüm girdiler sıfır olsa bile nöronun çıktı vermesini sağlar.
+
+Aktivasyon Fonksiyonu
+
+Ağın doğrusal olmayan (non-linear) karar alabilmesini sağlar.
+
+Örnek: ReLU, Sigmoid, Tanh, Softmax.
+
+3) 🔁 Öğrenme Süreci: Feedforward + Backpropagation + Epoch
+A) Feedforward (İleri Yayılım)
+
+Veri girişten → gizli katmanlara → çıktıya doğru ilerler.
+
+Ağırlıklar ve bias ile hesaplama yapılır.
+
+Üretilen çıktı modelin tahminidir.
+
+B) Backpropagation (Geri Yayılım – Hata Düzeltme)
+
+Tahmin ile gerçek değer arasındaki fark (hata) hesaplanır.
+
+Bu hata, geriye doğru yayılır.
+
+Ağırlıklar (w) ve bias (b) bu hatayı azaltacak şekilde güncellenir.
+
+Öğrenmenin gerçekleştiği kısım burasıdır.
+
+C) Epoch
+
+Tüm eğitim verisinin ağdan bir kez geçmesidir.
+
+Her epoch’ta:
+
+Feedforward yapılır
+
+Hata hesaplanır
+
+Backpropagation ile parametreler güncellenir
+
+Çoklu epoch → öğrenmenin olgunlaşması.
+
+4) 🧠 XOR Problemi ve Yapay Zekaya Katkısı
+XOR Neden Zor?
+
+XOR verisi doğrusal olarak ayrılamaz (tek çizgi ile ayırmak imkânsız).
+
+Tek katmanlı perceptron bu nedenle çözemez.
+
+Çözüm Nasıl Bulundu?
+
+Gizli katman eklenerek Çok Katmanlı Perceptron (MLP) oluşturuldu.
+
+Aktivasyon fonksiyonları ile doğrusal olmayan yapılar öğrenildi.
+
+Backpropagation ile ağ eğitildi.
+
+Önemi
+
+Çok katmanlı yapılar (derin öğrenme) geliştirildi.
+
+Sinir ağlarının karmaşık fonksiyonları öğrenebildiği kanıtlandı.
+
+Modern görüntü işleme modellerinin (CNN, RNN vb.) yolu açıldı.
+
+5) 📌 Kavramların Birbirleriyle Bağlantısı (Özet)
+
+Input → Hidden → Output : Veri akış sırası.
+
+w + b : Her nöronun hesaplama temelini oluşturur.
+
+Aktivasyon : Doğrusallık kırılır → karmaşık öğrenme sağlanır.
+
+Feedforward : Tahmin üretme aşaması.
+
+Backpropagation : Tahmin hatasını kullanıp w ve b güncelleme.
+
+Epoch : Bu iki sürecin (ileri ve geri yayılım) tüm veri için tamamlandığı tur.
+
+XOR : Çok katmanlı ağ ve aktivasyon kullanılmadan çözülemeyen klasik örnek → derin öğrenmenin çıkış noktası.
+
+6) 📚 Kısa ve Akılda Kalıcı Özet
+
+Girdi → Gizli → Çıktı : Yapı
+
+Ağırlık + Bias + Aktivasyon : Hesaplama
+
+Feedforward → Tahmin
+
+Backpropagation → Öğrenme
+
+Epoch → Tek tam eğitim turu
+
+XOR → Çok katmanlı yapının gerekliliğini gösteren temel sorun  
+
+
+
+
+
+
+
+
+
