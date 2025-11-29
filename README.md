@@ -17,7 +17,7 @@ Bu repo, **Dijital Görüntü Çözümleme** dersi kapsamında gerçekleştirile
 | :--- | :--- |
 | **Ders Adı** | Dijital Görüntü Çözümleme |
 | **📍 Konusu** | Dijital görüntülerin bilgisayar ortamında elde edilmesi, işlenmesi, analiz edilmesi ve anlamlandırılması süreçleri. |
-| **🛠 Platform** | Python, OpenCV, NumPy, Matplotlib |
+| **🛠Platform** | Python, OpenCV, NumPy, Matplotlib |
 | **🚀 Amacı** | Görüntü işleme tekniklerinin teorik temellerini kavramak ve gerçek dünya problemlerine uygulamaktır. |
 | **🎯 Hedefi** | Görüntü matrislerine hakimiyet; görüntü iyileştirme, gürültü giderme, netleştirme işlemleri ve nesne/yüz tespiti gibi bilgisayarlı görü uygulamaları geliştirmek. |
 ---
