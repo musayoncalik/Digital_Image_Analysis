@@ -151,37 +151,47 @@ Dijital görüntü işlemede temel yapı taşı olan RGB renk modelinin analizi.
 
 ## ⚙️ Kurulum ve Çalıştırma
 
-### 1️⃣ Repoyu Klonlayın
-```bash
-git clone https://github.com/kullaniciadi/Digital_Image_Analysis.git
-cd Digital_Image_Analysis
+## ⚙️ Kurulum ve Çalıştırma
 
-⚙️ Kurulum ve Çalıştırma
-Bu projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+Bu projeyi yerel bilgisayarınızda çalıştırmak ve geliştirmek için aşağıdaki adımları sırasıyla takip edin.
 
-Repoyu Klonlayın:
+### 1️⃣ Projeyi Klonlayın
+Öncelikle terminal veya komut istemcisini (CMD) açın ve repoyu bilgisayarınıza indirin:
 
-Bash
+```
 
+bash
 git clone [https://github.com/kullaniciadi/Digital_Image_Analysis.git](https://github.com/kullaniciadi/Digital_Image_Analysis.git)
 cd Digital_Image_Analysis
-Sanal Ortam Oluşturun (Opsiyonel ama önerilir):
+
+2️⃣ Sanal Ortam Oluşturun (Önerilen)
+Kütüphane çakışmalarını önlemek için sanal bir ortam (virtual environment) oluşturmanız tavsiye edilir.
 
 Bash
-
+# Sanal ortamı oluşturma
 python -m venv venv
+
+# Sanal ortamı aktif etme:
+# ---------------------------
 # Windows için:
-venv\Scripts\activate
-# Mac/Linux için:
+.\venv\Scripts\activate
+
+# MacOS / Linux için:
 source venv/bin/activate
-Gerekli Kütüphaneleri Yükleyin:
+
+
+3️⃣ Gerekli Kütüphaneleri Yükleyin
+Projenin çalışması için gerekli olan OpenCV, NumPy ve Matplotlib gibi paketleri yükleyin:
 
 Bash
-
 pip install opencv-python numpy matplotlib jupyter
-Projeyi Çalıştırın: Jupyter Notebook kullanıyorsanız:
+
+
+4️⃣ Projeyi Çalıştırın
+Kurulum tamamlandıktan sonra Jupyter Notebook arayüzünü başlatın:
 
 Bash
-
 jupyter notebook
-Komutunu çalıştırıp tarayıcı üzerinden ilgili haftanın .ipynb dosyasını açabilirsiniz.
+
+
+Bu komutu yazdıktan sonra tarayıcınızda bir sayfa açılacaktır. Buradan week_X klasörlerine gidip ilgili .ipynb dosyasını seçerek kodları çalıştırabilirsiniz.
