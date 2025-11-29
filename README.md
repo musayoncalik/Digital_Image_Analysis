@@ -45,7 +45,6 @@ Repo içerisindeki çalışmalar haftalık ilerlemeye göre düzenlenmiştir. De
 ```text
 Digital_Image_Analysis/
 │
-├── assets/        # README ekran görüntüleri
 ├── week/          # Giriş, Kurulum ve Python Temelleri
 ├── week_2/        # Temel Görüntü İşlemleri (Basic Image Operations)
 ├── week_3/        # Renkli Görüntü Oluşturma (Color Image Creation)
@@ -58,66 +57,68 @@ Digital_Image_Analysis/
 ├── week_11/       # Yüz Tespiti (Face Detection - Haar Cascade)
 ├── ...            # (Yeni haftalar eklendikçe güncellenecektir)
 └── .gitignore     # Git tarafından yok sayılacak dosyalar
-📝 Çalışma Konuları ve Detaylar
-Bu derste işlenen ve kodlanan ana başlıklar şunlardır:
 
-1. Basic Image Operations
-TR: Temel Görüntü İşlemleri
+```
 
-Görüntü okuma, gösterme ve kaydetme.
 
-Piksel manipülasyonu ve ROI (İlgi Alanı/Region of Interest) işlemleri.
+---
 
-2. Color Image Creation and Manipulation
-TR: Renkli Görüntü Oluşturma ve Manipülasyon
+## 📝 Çalışma Konuları ve Detaylar
 
-Renk uzayları arası dönüşümler (RGB, BGR, HSV, GRAY).
+### 1️⃣ Basic Image Operations
+- Görüntü okuma, gösterme ve kaydetme  
+- Piksel manipülasyonu ve ROI (Region of Interest)
 
-Renk kanallarını ayırma ve birleştirme işlemleri.
+### 2️⃣ Color Image Creation and Manipulation
+- Renk uzayları dönüşümleri: RGB, BGR, HSV, GRAY  
+- Renk kanallarını ayırma ve birleştirme
 
-3. Basic Geometric Image Transformations
-TR: Temel Geometrik Görüntü İşlemleri
+### 3️⃣ Basic Geometric Image Transformations
+- Ölçekleme (Scaling), Döndürme (Rotation), Öteleme (Translation)  
+- Perspektif ve afin dönüşümler
 
-Görüntü üzerinde Ölçekleme (Scaling), Döndürme (Rotation) ve Öteleme (Translation).
+### 4️⃣ Thresholding and Intensity Transformations
+- Simple Thresholding, Adaptive Thresholding, Otsu Binarization  
+- Histogram eşitleme ile kontrast artırma
 
-Perspektif ve afin dönüşümleri.
+### 5️⃣ Morphological Image Processing
+- Gürültü temizleme ve yapısal analiz  
+- Erozyon, Genişletme, Açma, Kapama
 
-4. Thresholding and Intensity Transformations
-TR: Eşikleme ve Piksel Yoğunluğu Dönüşümleri
+### 6️⃣ Contour Detection and Visualization
+- Nesne sınırlarını bulma algoritmaları  
+- Kontur özelliklerini hesaplama (Alan, Çevre, Merkez)
 
-Basit eşikleme (Simple Thresholding) yöntemleri.
+### 7️⃣ Face Detection Using Haar Cascade Classifier
+- Önceden eğitilmiş XML modelleri (haarcascade_frontalface_default)  
+- Gerçek zamanlı veya statik görüntülerde yüz tespiti ve işaretleme
 
-Adaptive Thresholding ve Otsu Binarization teknikleri.
+---
 
-Histogram eşitleme ile kontrast artırma.
+## 📸 Örnek Görüntüler
 
-5. Morphological Image Processing
-TR: Morfolojik Görüntü İşleme
+<div align="center">
 
-Gürültü temizleme ve yapısal analiz işlemleri.
+**Morfolojik İşlem**  
+<img src="assets/morphological_example.png" width="400"/>
 
-Erozyon (Erosion), Genişletme (Dilation), Açma (Opening) ve Kapama (Closing).
+**Kontur Tespiti (Contour Detection)**  
+<img src="assets/contour_example.png" width="400"/>
 
-6. Contour Detection and Visualization
-TR: Kontur Tespiti ve Görselleştirme
+**Yüz Tespiti (Face Detection)**  
+<img src="assets/face_detection_example.png" width="400"/>
 
-Görüntüdeki nesnelerin sınırlarını bulma algoritmaları.
+</div>
 
-Kontur özelliklerini hesaplama (Alan, Çevre, Merkez Noktası).
+---
 
-7. Face Detection Using Haar Cascade Classifier
-TR: Haar Cascade Sınıflandırıcı ile Yüz Tespiti
+## ⚙️ Kurulum ve Çalıştırma
 
-Önceden eğitilmiş XML modelleri (haarcascade_frontalface_default) kullanımı.
+### 1️⃣ Repoyu Klonlayın
+```bash
+git clone https://github.com/kullaniciadi/Digital_Image_Analysis.git
+cd Digital_Image_Analysis
 
-Gerçek zamanlı (webcam) veya statik görüntülerde yüz tespiti ve işaretleme.
-
-📸 Ekran Görüntüleri (Screenshots)
-Ders kapsamında yapılan uygulamalardan elde edilen çıktılar:
-
-🔹 Morfolojik İşlem Örneği
-🔹 Kontur Tespiti (Contour Detection)
-🔹 Yüz Tespiti (Face Detection)
 ⚙️ Kurulum ve Çalıştırma
 Bu projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
