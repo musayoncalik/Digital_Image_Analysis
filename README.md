@@ -45,16 +45,15 @@ Repo içerisindeki çalışmalar haftalık ilerlemeye göre düzenlenmiştir. De
 ```text
 Digital_Image_Analysis/
 │
-├── week/          # Giriş, Kurulum ve Python Temelleri
+├── week/          # Eşikleme ve Piksel Yoğunluğu Dönüşümleri
 ├── week_2/        # Temel Görüntü İşlemleri (Basic Image Operations)
-├── week_3/        # Renkli Görüntü Oluşturma (Color Image Creation)
-├── week_4/        # Temel Geometrik Dönüşümler
-├── week_5/        # Eşikleme (Thresholding) Teknikleri
-├── week_6/        # Morfolojik İşlemler (Morphological Processing)
-├── week_7/        # Kontur Tespiti (Contour Detection)
-├── week_8/        # Bulanıklaştırma ve Filtreleme
-├── week_10/       # İleri Seviye Analiz ve Öznitelik Çıkarımı
-├── week_11/       # Yüz Tespiti (Face Detection - Haar Cascade)
+├── week_3/        # BASIC GEOMETRIC IMAGE TRANSFORMATIONS (Temel Geometrik Görüntü İşlemleri)
+├── week_4/        # MORFOLOJICAL IMAGE PROCESSING (MORFOLOJİK GÖRÜNTÜ İŞLEME)
+├── week_5/        # COLOR IMAGE CREATION AND MANIPULATION (RENKLİ GÖRÜNTÜ OLUŞTURMA VE MANİPÜLASYON) 
+├── week_6/        # Kontur Tespiti ve Görselleştirme, RENKLİ GÖRÜNTÜ İŞLEME, MASKELEME VE MANİPÜLASYON
+├── week_7/        # Görüntü İşleme ve Kontur Analizi, Siyah Kenarlı Görüntülerde Otomatik Kırpma, Haar Cascade Sınıflandırıcı ile Yüz Tespiti
+├── week_8/        # OpenCV Kullanarak Plaka Tespiti
+├── week_11/       # İleri Seviye Analiz ve Öznitelik Çıkarımı
 ├── ...            # (Yeni haftalar eklendikçe güncellenecektir)
 └── .gitignore     # Git tarafından yok sayılacak dosyalar
 
