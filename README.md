@@ -181,8 +181,13 @@ source venv/bin/activate
 
 
 3️⃣ Gerekli Kütüphaneleri Yükleyin
-Projenin çalışması için gerekli olan OpenCV, NumPy ve Matplotlib gibi paketleri yükleyin:
+Projenin ihtiyaç duyduğu tüm kütüphaneleri (OpenCV, NumPy, Matplotlib vb.) tek komutla yüklemek için proje dizininde şu komutu çalıştırın:
 
+```bash
+pip install -r requirements.txt
+
+
+VEYA tek tek yükleyin.
 Bash
 pip install opencv-python numpy matplotlib jupyter
 
