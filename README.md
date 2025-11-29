@@ -55,6 +55,8 @@ Digital_Image_Analysis/
 ├── week_8/        # OpenCV Kullanarak Plaka Tespiti
 ├── week_11/       # İleri Seviye Analiz ve Öznitelik Çıkarımı
 ├── ...            # (Yeni haftalar eklendikçe güncellenecektir)
+├── requirements.txt   # Gerekli Python kütüphaneleri
+├── README.md          # Proje dokümantasyonu ve açıklamalar
 └── .gitignore     # Git tarafından yok sayılacak dosyalar
 
 ```
