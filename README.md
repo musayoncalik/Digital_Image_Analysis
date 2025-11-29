@@ -99,14 +99,52 @@ Digital_Image_Analysis/
 
 <div align="center">
 
-**Morfolojik İşlem**  
-<img src="assets/morphological_example.png" width="400"/>
+### 1. İlgi Alanı (ROI) ve Kırpma İşlemi
+Görüntü üzerinde belirli bir bölgenin (Region of Interest) seçilmesi ve kırpılması.
 
-**Kontur Tespiti (Contour Detection)**  
-<img src="assets/contour_example.png" width="400"/>
+<img width="800" alt="ROI ve Kırpma" src="<img width="1236" height="481" alt="image" src="https://github.com/user-attachments/assets/b1e5a5ae-dc6a-4676-92b6-19c34d9b75a1" />
+">
+<br><br>
 
-**Yüz Tespiti (Face Detection)**  
-<img src="assets/face_detection_example.png" width="400"/>
+### 2. Renkli Görüntü Oluşturma
+NumPy dizileri ve matris işlemleri kullanılarak sıfırdan renkli bir görüntü (Almanya bayrağı) oluşturulması.
+
+<img width="600" alt="Bayrak Oluşturma" src="<img width="879" height="526" alt="image" src="https://github.com/user-attachments/assets/cd0ac03f-b950-4ec7-a9c6-e123aaf47e59" />
+">
+<br><br>
+
+### 3. Geometrik Dönüşümler
+Görüntünün dikey ve yatay eksende aynalanması (flipping) ve döndürülmesi.
+
+<img width="800" alt="Geometrik Dönüşüm" src="<img width="1126" height="734" alt="image" src="https://github.com/user-attachments/assets/705c12d0-8a2e-4fca-9c8d-daf743575f69" />
+">
+<br><br>
+
+### 4. Morfolojik İşlemler (Gradyan)
+Orijinal görüntü üzerinde erozyon ve genişletme farklarının alınarak şekil sınırlarının (Gradyan) belirginleştirilmesi.
+
+<img width="800" alt="Morfolojik İşlemler" src="<img width="1359" height="711" alt="image" src="https://github.com/user-attachments/assets/ddb04972-8753-4915-8574-34bb453da647" />
+">
+<br><br>
+
+### 5. Kontur Tespiti (Contour Detection)
+Görüntüdeki nesnenin sınırlarının tespit edilmesi ve yeşil kontur çizgisi ile çizdirilmesi.
+
+<img width="500" alt="Kontur Tespiti" src="<img width="636" height="681" alt="image" src="https://github.com/user-attachments/assets/1e4a30e4-2852-4629-82df-11bcd73aefd0" />
+">
+<br><br>
+
+### 6. Yüz Tespiti (Face Detection)
+Haar Cascade sınıflandırıcısı kullanılarak kalabalık bir fotoğrafta (Futbol Takımı) çoklu yüz tespiti.
+
+<img width="800" alt="Yüz Tespiti" src="<img width="1378" height="444" alt="image" src="https://github.com/user-attachments/assets/529417c8-fea9-4b45-927b-480b450410cf" />
+">
+
+### 7. RGB Renk Uzayı ve Temel Kanallar (RGB Color Space)
+Dijital görüntü işlemede temel yapı taşı olan RGB renk modelinin analizi. Saf renk kodları (Kırmızı, Yeşil, Mavi) ve bu kanalların birleşimiyle oluşan beyaz rengin piksel değerleri (Örn: `255, 0, 0`) kullanılarak oluşturulması.
+
+<img width="800" alt="RGB Renk Uzayı ve Kanallar" src="<img width="1370" height="393" alt="image" src="https://github.com/user-attachments/assets/9301247c-0535-4908-9ccb-80a7d55a50c6" />
+">
 
 </div>
 
