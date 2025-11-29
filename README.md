@@ -13,30 +13,39 @@ Bu repo, **Dijital Görüntü Çözümleme** dersi kapsamında gerçekleştirile
 
 ## 📖 Ders Bilgileri
 
-| Konu | Açıklama |
-|------|----------|
-| **Kapsam** | Dijital görüntülerin bilgisayar ortamında elde edilmesi, işlenmesi, analiz edilmesi ve anlamlandırılması. |
-| **Amaç** | Görüntü işleme tekniklerinin teorik temellerini öğrenmek ve Python + OpenCV ile uygulamak. |
-| **Hedef** | Görüntü matrisleri, iyileştirme, nesne tespiti, yüz tanıma ve öznitelik çıkarımı uygulamaları geliştirmek. |
+### 📍 Konusu
+Dijital görüntülerin bilgisayar ortamında elde edilmesi, işlenmesi, analiz edilmesi ve anlamlandırılması süreçleri.
+
+### 🚀 Amacı
+Görüntü işleme tekniklerinin teorik temellerini kavramak ve bu teknikleri **Python** ve **OpenCV** kütüphanesi kullanarak gerçek dünya problemlerine uygulamaktır.
+
+### 🎯 Hedefi
+* Görüntü matrisleri üzerinde hakimiyet kurmak.
+* Görüntü iyileştirme, gürültü giderme ve netleştirme işlemlerini yapabilmek.
+* Nesne tespiti, yüz tanıma ve öznitelik çıkarımı gibi bilgisayarlı görü (Computer Vision) uygulamaları geliştirmek.
 
 ---
 
-## 🛠 Kullanılan Teknolojiler
+## 🛠 Kullanılan Teknolojiler ve Kütüphaneler
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![OpenCV](https://img.shields.io/badge/OpenCV-green)
-![NumPy](https://img.shields.io/badge/NumPy-yellow)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-orange)
-![Jupyter](https://img.shields.io/badge/Jupyter-purple)
+Projelerde aşağıdaki teknoloji yığını kullanılmıştır:
+
+* **Dil:** Python 3.x
+* **Görüntü İşleme:** OpenCV (`cv2`)
+* **Matematiksel İşlemler:** NumPy
+* **Veri Görselleştirme:** Matplotlib
+* **Geliştirme Ortamı:** Jupyter Notebook / Visual Studio Code
 
 ---
 
-## 📂 Klasör Yapısı
+## 📂 İçerik ve Klasör Yapısı
 
+Repo içerisindeki çalışmalar haftalık ilerlemeye göre düzenlenmiştir. Ders ilerledikçe yeni haftalar eklenecektir.
 
+```text
 Digital_Image_Analysis/
 │
-├── assets/        # README ve proje ekran görüntüleri
+├── assets/        # README ekran görüntüleri
 ├── week/          # Giriş, Kurulum ve Python Temelleri
 ├── week_2/        # Temel Görüntü İşlemleri (Basic Image Operations)
 ├── week_3/        # Renkli Görüntü Oluşturma (Color Image Creation)
@@ -47,74 +56,94 @@ Digital_Image_Analysis/
 ├── week_8/        # Bulanıklaştırma ve Filtreleme
 ├── week_10/       # İleri Seviye Analiz ve Öznitelik Çıkarımı
 ├── week_11/       # Yüz Tespiti (Face Detection - Haar Cascade)
-├── ...            # Yeni haftalar eklendikçe güncellenecektir
+├── ...            # (Yeni haftalar eklendikçe güncellenecektir)
 └── .gitignore     # Git tarafından yok sayılacak dosyalar
-
-<pre>
 📝 Çalışma Konuları ve Detaylar
-1️⃣ Basic Image Operations
-- Görüntü okuma, gösterme ve kaydetme
-- Piksel manipülasyonu ve ROI (Region of Interest)
+Bu derste işlenen ve kodlanan ana başlıklar şunlardır:
 
-2️⃣ Color Image Creation and Manipulation
-- Renk uzayları dönüşümleri: RGB, BGR, HSV, GRAY
-- Renk kanallarını ayırma ve birleştirme
+1. Basic Image Operations
+TR: Temel Görüntü İşlemleri
 
-3️⃣ Basic Geometric Image Transformations
-- Ölçekleme (Scaling), Döndürme (Rotation), Öteleme (Translation)
-- Perspektif ve afin dönüşümler
+Görüntü okuma, gösterme ve kaydetme.
 
-4️⃣ Thresholding and Intensity Transformations
-- Simple Thresholding, Adaptive Thresholding, Otsu Binarization
-- Histogram eşitleme ile kontrast artırma
+Piksel manipülasyonu ve ROI (İlgi Alanı/Region of Interest) işlemleri.
 
-5️⃣ Morphological Image Processing
-- Gürültü temizleme ve yapısal analiz
-- Erozyon, Genişletme, Açma, Kapama
+2. Color Image Creation and Manipulation
+TR: Renkli Görüntü Oluşturma ve Manipülasyon
 
-6️⃣ Contour Detection and Visualization
--Nesne sınırlarını bulma algoritmaları
-- Kontur özelliklerini hesaplama (Alan, Çevre, Merkez)
+Renk uzayları arası dönüşümler (RGB, BGR, HSV, GRAY).
 
-7️⃣ Face Detection Using Haar Cascade Classifier
-- Önceden eğitilmiş XML modelleri (haarcascade_frontalface_default)
-- Gerçek zamanlı veya statik görüntülerde yüz tespiti ve işaretleme
+Renk kanallarını ayırma ve birleştirme işlemleri.
 
-📸 Örnek Görüntüler
-<div align="center">
-Morfolojik İşlem
-<img src="assets/morphological_example.png" width="400"/>
+3. Basic Geometric Image Transformations
+TR: Temel Geometrik Görüntü İşlemleri
 
-Kontur Tespiti (Contour Detection)
-<img src="assets/contour_example.png" width="400"/>
+Görüntü üzerinde Ölçekleme (Scaling), Döndürme (Rotation) ve Öteleme (Translation).
 
-Yüz Tespiti (Face Detection)
-<img src="assets/face_detection_example.png" width="400"/>
+Perspektif ve afin dönüşümleri.
 
-</div>
-  
+4. Thresholding and Intensity Transformations
+TR: Eşikleme ve Piksel Yoğunluğu Dönüşümleri
+
+Basit eşikleme (Simple Thresholding) yöntemleri.
+
+Adaptive Thresholding ve Otsu Binarization teknikleri.
+
+Histogram eşitleme ile kontrast artırma.
+
+5. Morphological Image Processing
+TR: Morfolojik Görüntü İşleme
+
+Gürültü temizleme ve yapısal analiz işlemleri.
+
+Erozyon (Erosion), Genişletme (Dilation), Açma (Opening) ve Kapama (Closing).
+
+6. Contour Detection and Visualization
+TR: Kontur Tespiti ve Görselleştirme
+
+Görüntüdeki nesnelerin sınırlarını bulma algoritmaları.
+
+Kontur özelliklerini hesaplama (Alan, Çevre, Merkez Noktası).
+
+7. Face Detection Using Haar Cascade Classifier
+TR: Haar Cascade Sınıflandırıcı ile Yüz Tespiti
+
+Önceden eğitilmiş XML modelleri (haarcascade_frontalface_default) kullanımı.
+
+Gerçek zamanlı (webcam) veya statik görüntülerde yüz tespiti ve işaretleme.
+
+📸 Ekran Görüntüleri (Screenshots)
+Ders kapsamında yapılan uygulamalardan elde edilen çıktılar:
+
+🔹 Morfolojik İşlem Örneği
+🔹 Kontur Tespiti (Contour Detection)
+🔹 Yüz Tespiti (Face Detection)
 ⚙️ Kurulum ve Çalıştırma
-1️⃣ Repoyu Klonlayın
+Bu projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
-git clone https://github.com/kullaniciadi/Digital_Image_Analysis.git
+Repoyu Klonlayın:
+
+Bash
+
+git clone [https://github.com/kullaniciadi/Digital_Image_Analysis.git](https://github.com/kullaniciadi/Digital_Image_Analysis.git)
 cd Digital_Image_Analysis
+Sanal Ortam Oluşturun (Opsiyonel ama önerilir):
 
-  
-2️⃣ Sanal Ortam Oluşturun (Opsiyonel ama önerilir)
+Bash
+
 python -m venv venv
-# Windows
+# Windows için:
 venv\Scripts\activate
-  
-# Mac/Linux
+# Mac/Linux için:
 source venv/bin/activate
+Gerekli Kütüphaneleri Yükleyin:
 
-  
-3️⃣ Gerekli Kütüphaneleri Yükleyin
+Bash
 
 pip install opencv-python numpy matplotlib jupyter
+Projeyi Çalıştırın: Jupyter Notebook kullanıyorsanız:
 
-  
-4️⃣ Projeyi Çalıştırın
+Bash
 
 jupyter notebook
-Tarayıcı üzerinden ilgili haftanın .ipynb dosyasını açabilirsiniz.  </pre> 
+Komutunu çalıştırıp tarayıcı üzerinden ilgili haftanın .ipynb dosyasını açabilirsiniz.
